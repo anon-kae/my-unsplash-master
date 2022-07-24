@@ -151,10 +151,17 @@ export default {
       await this.findAll();
     },
     async onCreate () {
+      const { photoUrl } = this.photo
+      const valid = /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|png)$/g.test(photoUrl)
+      if (!valid) {
+        await this.$store.dispatch('snackbar/setErrorMessage', 'Photo URL not match pattern!')
+      }
+
       await this.$api.uploadService.createPhoto(this.photo)
       await this.$store.dispatch('snackbar/setSuccessMessage', 'Create photo success!')
       await this.findAll();
       this.dialog = false;
+      this.photo = {}
     },
     async findAll () {
       const { result: { photos } } = await this.$api.uploadService.findAll({ keyword: this.keyword, page: 1, size: 50 })
