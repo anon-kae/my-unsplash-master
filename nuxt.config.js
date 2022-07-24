@@ -8,7 +8,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s',
-    title: 'image-uploader',
+    title: 'my-unsplash',
     htmlAttrs: {
       lang: 'en',
     },
