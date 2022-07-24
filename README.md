@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://my-unsplash-master.netlify.app">
       Demo
     </a>
     <span> | </span>
@@ -37,22 +37,19 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://raw.githubusercontent.com/anon-kae/my-unsplash-master/develop/assets/images/demo.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- This project can be seen at https://my-unsplash-master.netlify.app. It uses heroku for the backend host
+- This was a relatively simple project. it was fun to get more aquainted with Node.js with express
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [Nuxt.js](https://nuxtjs.org/)
+- [Vuetify](https://vuetifyjs.com/en/getting-started/installation/)
 
 ## Features
 
@@ -68,25 +65,22 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/anon-kae/my-unsplash-master
 
 # Install dependencies
-$ npm install
+$ yarn install
 
 # Run the app
-$ npm start
+$ yarn dev
 ```
 
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [Express](https://expressjs.com/)
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@anon-kae](https://github.com/anon-kae)
