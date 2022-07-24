@@ -37,7 +37,7 @@
 
 ## Overview
 
-![screenshot](https://raw.githubusercontent.com/anon-kae/my-unsplash-master/develop/assets/images/demo.png)
+![screenshot](https://raw.githubusercontent.com/anon-kae/my-unsplash-master/develop/assets/images/demo-my-unsplash.png)
 
 - This project can be seen at https://my-unsplash-master.netlify.app. It uses heroku for the backend host
 - This was a relatively simple project. it was fun to get more aquainted with Node.js with express
