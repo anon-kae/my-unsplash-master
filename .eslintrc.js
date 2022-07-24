@@ -133,7 +133,7 @@ module.exports = {
 
     //* ** Vuetify ***/
     'vuetify/no-deprecated-classes': 'error',
-    'vuetify/grid-unknown-attributes': 'error',
+    // 'vuetify/grid-unknown-attributes': 'error',
     'vuetify/no-legacy-grid': 'error',
   },
 }

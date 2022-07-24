@@ -46,7 +46,7 @@
           xl="4">
           <v-hover v-slot="{ hover }">
             <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
-              <v-img :src="item.photoUrl" height="225px">
+              <v-img :src="item.photoUrl" width="382px">
                 <v-card-title class="justify-end">
                   <v-btn
                     :color="transparent"
@@ -58,7 +58,7 @@
                     delete
                   </v-btn>
                 </v-card-title>
-                <div style="position: absolute;top: 160px; color: transparent">
+                <div style="position: absolute;bottom: 5px;; color: transparent">
                   <v-card-text class="font-weight-bold">
                     <h1 :class="{ 'show': hover, 'white--text': hover }">
                       {{ item.label }}
