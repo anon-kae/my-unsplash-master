@@ -45,8 +45,28 @@
           lg="4"
           xl="4">
           <v-hover v-slot="{ hover }">
-            <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
-              <v-img :src="item.photoUrl" width="382px">
+            <v-skeleton-loader
+              v-if="loading"
+              :loading="loading"
+              class="mx-auto"
+              max-width="382"
+              type="card" />
+            <v-card v-else :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
+              <v-img
+                :src="item.photoUrl"
+                width="382px"
+                :lazy-src="item.photoUrl"
+                class="grey lighten-2">
+                <template #placeholder>
+                  <v-row
+                    class="fill-height ma-0"
+                    align="center"
+                    justify="center">
+                    <v-progress-circular
+                      indeterminate
+                      color="grey lighten-5" />
+                  </v-row>
+                </template>
                 <v-card-title class="justify-end">
                   <v-btn
                     :color="transparent"
@@ -135,6 +155,7 @@ export default {
     return {
       transparent: 'rgba(255, 255, 255, 0)',
       keyword: '',
+      loading: false,
       dialog: false,
       items: [],
       photo: {}
@@ -166,8 +187,10 @@ export default {
       this.photo = {}
     },
     async findAll () {
+      this.loading = true
       const { result: { photos } } = await this.$api.uploadService.findAll({ keyword: this.keyword, page: 1, size: 50 })
       this.items = photos
+      this.loading = false
     }
   },
 }
